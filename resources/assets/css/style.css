@@ -1,0 +1,43 @@
+
+/*este es de contenido*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #cce6ff;
+    position: fixed;
+    height: 50%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #b3ffec;
+    color: black;
+}
+
+li a:hover:not(.active) {
+    background-color:#c6ffb3 ;
+    color: black;
+}
+
+#contenedor iframe{
+  display: block;
+    width: 550px;
+    height: 460px;
+    margin: 0 auto;
+    border: 0;
+}
+
+#referencias{
+    display: none;
+}
+
+/*fin de contenido */
