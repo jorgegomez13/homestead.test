@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Moddels;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class contenido extends Model
+class login extends Model
 {
     //
 }

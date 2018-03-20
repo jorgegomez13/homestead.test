@@ -1,20 +1,6 @@
 <title>Pagina | Projects</title>
 @extends('layouts.default')
 @section('content')
-
-<script>
-function cambio(url) {
-document.getElementById("contenedor").innerHTML = '<iframe width="800" height="460" src="'+ url +'??&rel=0&showinfo=0&controls=0&autoplay=1&start" frameborder="0" allowfullscreen></iframe>';
-return false;
-}
-
-function vname(text){
-document.getElementById("txt").innerText= text ;  
-return false;
-}
-
-
-</script>
     <br><div class="container-fluid"></br>
         <div class="media-container-row">
             <div class="card p-3 col-12 col-md-3" style="float:left;">

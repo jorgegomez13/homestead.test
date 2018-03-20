@@ -1,22 +1,24 @@
 <title>Pagina | Contacts</title>
 @extends('layouts.default')
 @section('content')
-
-<div class="row"><table>
-            <tr><div class="form-group col-sm-6">
-                <label for="name" class="h4">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter name" required>
-            </div></tr>
-            <tr><div class="form-group col-sm-6">
-                <label for="email" class="h4">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
-            </div></tr>
-        </div></tr>
-       <tr><div class="form-group">
-            <label for="message" class="h4 ">Message</label>
-            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
-        </div></tr>
-        <td><button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
-<tr><div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div></tr></table>
-
+<br>
+<form method="post" id="formulario-contacto" role="form" autocomplete="off"></br>
+<div class="form-group has-success">
+<input class="form-control" type="text" name="nombre" placeholder="Nombre" required/>
+<span id="error" class="help-block"></span></div>
+<div class="form-group has-error">
+<input class="form-control" type="email" name="email" placeholder="Correo electrónico" required />
+<span id="error" class="help-block"></span></div>
+<div class="form-group">
+<textarea class="form-control" rows="10" name="mensaje" placeholder="Mensaje"></textarea>
+<span id="error" class="help-block"></span></div> 
+<div class="checkbox">
+<label>
+<input type="checkbox" name="aceptolopd" value="Acepto Lopd" required />
+He leído y acepto la política de protección de datos.</label>
+</div> 
+<div class="form-group">
+<button class="btn btn-primary btn-lg" type="submit">Enviar</button>
+</div>
+</form>
 @stop
