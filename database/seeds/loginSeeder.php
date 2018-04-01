@@ -23,23 +23,30 @@ class loginSeeder extends Seeder
 
   	 	]);
 
-  	 	login::create([
+        login::create([
 
-  	 		'usuario' => '000297',
-  	 		'name' => 'Leslie Gomez',
-  	 		'password' => bcrypt('secret'),
-
-
-  	 	]);
-
-  	 	 	login::create([
-
-  	 		'usuario' => '000298',
-  	 		'name' => 'Juan Lopez',
-  	 		'password' => bcrypt('secret'),
+        'usuario' => '000297',
+        'name' => 'Leslie Gomez',
+        'password' => bcrypt('secret'),
 
 
-  	 	]);
+      ]);
+          login::create([
+
+        'usuario' => '000298',
+        'name' => 'Yusei Fudo',
+        'password' => bcrypt('secret'),
+
+
+      ]);
+            login::create([
+
+        'usuario' => '000299',
+        'name' => 'Aki Izayoi',
+        'password' => bcrypt('secret'),
+
+
+      ]);
 
 
     }

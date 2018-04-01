@@ -23,16 +23,12 @@ class contenidoController extends Controller
 	}
 
 	public function listado()
-
 	{
-        $login = login::select(['id','usuario','name']);
- 
-        return Datatables::of($login)
- 
-            ->make(true);
+
+		$login = DB::table('login')->get();
 
 		
-		//return view('contenido.listado', compact('login'));
+		return view('contenido.listado', compact('login'));
 
 	}
 
@@ -42,4 +38,35 @@ class contenidoController extends Controller
 
     	return view('contenido.projects');
     }
+
+    public function detalle($id)
+    {
+    	$login = login::findOrFail($id);
+
+    		if($login == null){
+    		return response()->view('errors.404', [], 404);
+    	}
+
+
+    	return view('contenido.detalle',compact('login'));
+
+    }
+
+    public function newusuario()
+
+    {
+    	$data = request()->all();
+
+    	login::create([
+
+    	'usuario' =>  $data['usuario'],
+    	'name'    =>  $data['name'],
+    	'password' => bcrypt($data['password'])
+
+
+    	]);
+
+    }
+
+
 }

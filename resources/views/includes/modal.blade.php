@@ -10,7 +10,7 @@
       </div>
       <div class="modal-body">
       <!-- login -->
-              <form action="hello.php"><!-- action del php -->
+              <form action="index"><!-- action del php -->
           <div class="form-group">
             <label for="text">Usuario:</label>
             <input type="text" class="form-control" id="usuario" placeholder="Usuario" required>
