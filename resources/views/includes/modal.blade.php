@@ -10,18 +10,18 @@
       </div>
       <div class="modal-body">
       <!-- login -->
-              <form action="projects.php"><!-- action del php -->
+              <form action="hello.php"><!-- action del php -->
           <div class="form-group">
             <label for="text">Usuario:</label>
-            <input type="text" class="form-control" id="usuario" required>
+            <input type="text" class="form-control" id="usuario" placeholder="Usuario" required>
           </div>
           <div class="form-group">
             <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd" required>
+            <input type="password" class="form-control" id="pwd" placeholder="Password" required>
           </div>
           <div class="form-check">
           </div>
-          <button type="submit" class="btn btn-primary">Entrar</button>
+          <center><button type="submit" class="btn btn-success btn-lg">Entrar</button></center>
         </form>
       <!-- login  -->
       </div>

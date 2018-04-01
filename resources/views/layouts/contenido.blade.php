@@ -1,13 +1,12 @@
 <!doctype html>
 <html>
 <head>
-    @include('includes.modal')
     @include('includes.head')
 </head>
 <body>
 <div class="container">
     
-    <header class="row">@include('includes.header')</header>
+    <header class="row">@include('includes.contheader')</header>
    
     <div id="main" class="row">@yield('content')</div>
 	<hr>

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLoginsTable extends Migration
+class CreateLoginTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class CreateLoginsTable extends Migration
      */
     public function up()
     {
-        Schema::create('logins', function (Blueprint $table) {
+        Schema::create('login', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
-            $table->string('name')
-            $table->string('usuario')->index()->unique();
+            $table->string('usuario','6')->unique();
+            $table->string('name');
             $table->string('password');
+            $table->rememberToken();
+            $table->timestamps();
         });
     }
 
@@ -29,6 +30,7 @@ class CreateLoginsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('logins');
+        Schema::dropIfExists('login');
     }
 }
+//https://styde.net/relaciones-con-el-orm-eloquent/

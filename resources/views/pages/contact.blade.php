@@ -1,6 +1,6 @@
-<title>Pagina | Contacts</title>
 @extends('layouts.default')
 @section('content')
+<title>Pagina | Contacts</title>
 <br>
 <form method="post" id="formulario-contacto" role="form" autocomplete="off"></br>
 <div class="form-group has-success">

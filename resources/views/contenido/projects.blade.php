@@ -1,6 +1,6 @@
-<title>Pagina | Projects</title>
-@extends('layouts.default')
+@extends('layouts.contenido')
 @section('content')
+<title>Pagina | Projects</title>
     <br><div class="container-fluid"></br>
         <div class="media-container-row">
             <div class="card p-3 col-12 col-md-3" style="float:left;">
@@ -35,7 +35,7 @@
                                 <td><a  href="https://www.youtube.com/embed/" onclick="return cambio(this.href),vname(this.text)">Llenado de Formatos</a</td>                                
                             </tr>
                             <tr class="mbr-text mbr-fonts-style display-7">
-                                <td><a  href="https://www.youtube.com/embed/7Oydk8-O7Rg"7Oydk8-O7Rg onclick="return cambio(this.href),vname(this.text)">Casos Prácticos</a</td>                                
+                                <td><a  href="https://www.youtube.com/embed/" onclick="return cambio(this.href),vname(this.text)">Casos Prácticos</a</td>                                
                             </tr>
                         </tbody>
                     </table>
@@ -55,6 +55,4 @@
             </div>
         </div>
     </div>
-
-
 @stop

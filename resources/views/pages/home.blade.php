@@ -1,6 +1,6 @@
-<title>Pagina | Inicio</title>
 @extends('layouts.default')
 @section('content')
+<title>Pagina | Inicio</title>
     <div class="container">
       <div class="row row-offcanvas row-offcanvas-right">
         <div class="col-xs-12 col-sm-9">
@@ -52,10 +52,7 @@
           </div>
         </div>
       </div>
-      <hr>
     </div>
-   
-    
 @stop
 
 
