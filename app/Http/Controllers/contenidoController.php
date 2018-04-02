@@ -55,16 +55,30 @@ class contenidoController extends Controller
     public function newusuario()
 
     {
+    	
+    	 return view('contenido.newusuario');
+
+    }
+
+
+    public function store()
+
+    {
+    	
     	$data = request()->all();
+
+    	// dd($data);
 
     	login::create([
 
     	'usuario' =>  $data['usuario'],
     	'name'    =>  $data['name'],
-    	'password' => bcrypt($data['password'])
+    	'password' => bcrypt($data['password']),
 
 
     	]);
+
+    	return redirect ('listado');
 
     }
 

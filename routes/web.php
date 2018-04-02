@@ -21,7 +21,10 @@ Route::get('/listado','contenidoController@listado');
 
 Route::get('/detalle/{id}','contenidoController@detalle')->where('id','[0-9]+');
 
-// Route::post('/newusuario','contenidoController@nuevo')
+Route::get('/newusuario','contenidoController@newusuario');
+
+Route::post('/newusuario/crear','contenidoController@store');
+
 
 
 
