@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
 <head>
-    @include('includes.modal')
     @include('includes.head')
 </head>
 <body>

@@ -12,8 +12,15 @@ use App\login;
 
 use Illuminate\Support\Collection;
 
+use App\Http\Requests\editRequest;
+
 class contenidoController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
 	public function index()
 	{
@@ -81,6 +88,42 @@ class contenidoController extends Controller
     	return redirect ('listado');
 
     }
+
+    public function destroy($id)
+
+    {
+            $login = login::find($id);
+
+            $login -> delete();
+            login::destroy($id);
+            return redirect('listado');
+
+    }
+
+    public function edit($id)
+
+    {
+        $login = login::find($id);
+        return view('contenido.edit')->with('login',$login);
+
+    }
+
+    public function update($id, Request $Request)
+
+    {
+        $login = login::find($id);
+        $login->usuario = $Request->input('usuario');
+        $login->name = $Request->input('name');
+        $login->password = bcrypt("password");
+        $login->save();
+        return redirect('listado');
+
+
+
+    }
+
+
+
 
 
 }

@@ -8,8 +8,6 @@ use app\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 
-use App\login;
-
 use Illuminate\Support\Collection;
 
 class defaultController extends Controller
@@ -31,13 +29,8 @@ class defaultController extends Controller
 
     public function about()
     {
-     
-         $login = DB::table('login')->get();
 
-        //$login = login::all();//se puede manejar esta forma tambien
-    	
-        return view('pages.about', compact('login'));
-    	
+        return view('pages.about');
     }
 
 }
