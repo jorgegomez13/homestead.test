@@ -21,4 +21,5 @@ He leído y acepto la política de protección de datos.</label>
 <button class="btn btn-primary btn-lg" type="submit">Enviar</button>
 </div>
 </form>
+
 @stop

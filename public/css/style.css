@@ -1,1 +1,14 @@
 /*estilos*/
+
+.newuser{
+    position: absolute;
+    left: 80%;
+}
+
+ #navbarDropdown{
+     position: absolute;
+     left: 250px;
+     top: 5px;
+ }
+
+

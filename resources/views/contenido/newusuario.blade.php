@@ -8,15 +8,15 @@
 	{{ csrf_field() }}
 
 	<label for="usuario">Usuario</label>
-	<input type="text" name="usuario" placeholder="codigo"  value="000" required="0">
+	<input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" type="text" name="usuario" placeholder="codigo"  value="000" required="0">
 	<br>
 	<label for="name">Nombre</label>
-	<input type="text" name="name" placeholder="Nombre" required="0">
+	<input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" type="text" name="name" placeholder="Nombre" required="0">
 	<br>
 	<label for="password" >Contraseña</label>
-	<input type="password" name="password" placeholder="Password" required="0">
+	<input  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" type="password" name="password" placeholder="Password" required="0">
 	<br>
-	<button type="submit">Crear</button>
+	<button class="btn btn-success" type="submit">Crear</button>
 </ul>
 </form>
 
